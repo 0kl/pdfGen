@@ -1,0 +1,31 @@
+{
+  "name": "pdfservice",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src/* --config ./.eslintrc.js",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "node ./src/bin/www",
+    "test": "jest --verbose",
+    "watch:lint": "",
+    "watch:test": "npm run jest -- --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "express": "^4.16.3",
+    "jest": "^23.2.0",
+    "pdf-powerpoint": "^1.2.1",
+    "puppeteer": "^1.18.1",
+    "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "artillery": "^1.6.0-21",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1"
+  }
+}
